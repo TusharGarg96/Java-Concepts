@@ -1,0 +1,47 @@
+Arrays
+-----------------------------------------------------------------------------------------------
+   It is collection of similar data elements where each element is given a 
+common name and can be distinguiished on the basis of incides. 
+It stores data in contiguous memory location.
+
+Disadvantage:
+------------------------------------
+- Fixed size (cann't be changed during runtime)
+
+Java Array vs C Array:
+---------------------------------------
+- Arrays in java take memory space during runtime, while arrays in C
+   , memory is allocated at compiletime.
+- java arrays get the dafault value as per the data type, while C arrays 
+   get default GARBAGE VALUE.
+- initialization -> java: int arr[] = new int[5];	     C: int arr[5];
+- declaration -> java: int arr[];	(int arr[5] X)	     C: int arr[5];
+- If we are accessing a index value which is greater than the maximum index value
+  of array then in java gives : ArrayIndexOutOfBoundsException at runtime, while
+  C array sets the default garbage value to that particular index value.
+- java arrays suports attributes like .length, etc...while C arrays don't have such attributes
+  support.
+- to point to index values while iterating, java don't allow use of 'long' data type(CTE){double}
+  instead we can use byte, short, int . while C allows all the three integer data 
+  types are allowed (short,int long)
+- int a[] = new int[0]; (correct) 		int arr[0]; (CTE)
+- Jagged Arrays are allowed in java, while it is not allowed in C.
+
+#PTR: local variable must hve a DEFAULT value in java,  while in C is  gets the garbage value.
+#PTR: Java arrays are only initiaized during runtime, while creation is only at runtime.
+
+
+'new' Keyword
+------------------------------------
+- allocate memory dynamically in a data structure known as HEAP(only).
+- initialization with default initial values
+- returns address.
+
+
+#NOTE: Garbage Collector
+- It is a thread which looks for the unassigned value in the whole program and delete that 
+part of the program which is not being used in the program aymore.
+
+Jagged Arrays
+---------------------------------
+multi-dimensional arrays of different sizes or non-rectangular matrix.

@@ -1,0 +1,64 @@
+OOP concept in Java
+-----------------------------------------------------------------
+NOTE: 4 main OOP concept
+	- Abstraction
+	- Encapsulation
+	- Inheritance
+	- Polymorphism
+             3 main OOP concept
+	->P I E
+
+PTR: Objects can either have real-world existance and physical existance(not necessary)
+
+Diff. b/w class and object
+---------------------------------------
+class can't exist in real-world, whereas object have.
+	PTR:- class can only have declaratins of data members and blocks({//any block})
+	         - class level can be initialized at runtime as well while local variables have to be initialized by the programmer.
+Objects are created in run-time, using 'new' keyword.
+
+Abstraction: hiding complex features and showing only necessary features to the user.
+Encapsulation: wrapping up of data and methods in a single unit.
+	PTR: without encapsulation, abstraction is not possible.
+Inheritance: can be understood as 'is-a'relationship.eg- CAR is a VEHICLE.
+	Here CAR(LHS) is sub/child/derived class, while VEHICLE(RHS) is super/parent/base class.
+Polymorphism: when same OBJECT behaves differently in different situations.
+	1. Dynamic polymorphism(run-time)
+	2. Static polymorphism(compile-time)
+
+'has-a' entity-entity relationship
+-----------------------------
+|	container	|
+|		|
+|		|
+| ---------------	|	
+|(contained)|	|	
+|	 |	|
+-----------------------------
+
+
+Example of OOP
+------------------------------------
+class Student{
+	//poperties or data members or state of object
+	int id;
+	String name;
+	String course;
+
+	//functionslities or methods or member function or behaviours
+	void getAllDetails(int i, String n, String c){
+		id =i;
+		name = n;
+		course = c;
+	}
+	void display(){
+		System.out.println(id+"\t"+name+"\t"+course);
+	}
+}
+class MyMain{
+	public static void main(String args[]){
+		//anonymous object creation
+		new Student().display();   //object of student class
+	}
+}
+PTR: anonymous object can be used only once.
